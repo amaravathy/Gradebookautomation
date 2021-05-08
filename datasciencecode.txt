@@ -1,0 +1,45 @@
+import pandas as pd
+ test=pd.read_csv("C:\\Users\\MANISH\\Desktop\\gradebook.csv")
+print(test)
+print("Highest score in java course:",test["Java"].max())
+print("Highest score in python course:",test["python"].max())
+print("Highest score in total course:",test["total"].max())
+print("Highest score in java course:",test["Java"].min())
+print("minimum score in java course:",test["python"].min())
+print("minimum total :",test["total"].min())
+
+if else
+import pandas as pd
+>>> names = {'python': ['89','23','34','43','66','45','67','98']}
+>>> df = pd.DataFrame(names,columns=['python'])
+>>> df['pythonresult'] = df['python'].apply(lambda x: 'Fail' if x == '23' else 'Pass')
+cross:tab
+import pandas as pd
+test=pd.read_csv("C:\\Users\\MANISH\\Desktop\\gradebook.csv")
+test
+pd.crosstab(test.result,test.slot)
+chisquare
+ import pandas as pd
+import scipy.stats as stats
+import researchpy as rp
+mport researchpy as rp
+test=pd.read_csv("C:\\Users\\MANISH\\Desktop\\studentdetails.csv")
+rp.summary_cat(df[["result", "slot"]])
+crosstab = pd.crosstab(test["result"], test["slot"])
+ crosstab
+stats.chi2_contingency(crosstab)
+crosstab, test_results, expected = rp.crosstab(test
+					["result"], test["slot"],
+                                               test= "chi-square",
+                                               expected_freqs= True,
+                                               prop= "cell")
+crosstab
+test_results
+expected
+
+correlation
+import pandas as pd
+>>> test=pd.read_csv("C:\\Users\\MANISH\\Desktop\\gradebook.csv")
+>>> test=pd.read_csv("C:\\Users\\MANISH\\Desktop\\gradebook.csv")
+>>> print(test)
+   pg.corr(x=test['Java'],y=test['python'])
